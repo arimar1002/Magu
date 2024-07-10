@@ -32,3 +32,11 @@ nombre-libro-font-style: normal;
 	padding: 0px;
 }
 
+.btn-lg, .btn-group-lg > .btn {
+  padding: 0.8rem 1.3rem!important;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  border-radius: 0.5rem!important;
+  font-family: "Lato", sans-serif;
+
+}

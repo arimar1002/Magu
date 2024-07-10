@@ -311,11 +311,31 @@
 	font-weight: 400;
 }
 
+#carousel-body .btn-lg{
+	background-color: #D36954;
+	color: white;
+	font-weight: 600;
+}
+
+#carousel-body .btn-lg:hover{
+	background-color: #EE755D;
+}
+
+#slide1 .col-lg-5, #slide2 .col-lg-5, #slide3 .col-lg-5{
+	text-align: center;
+	padding: 0rem 2rem 2rem;
+	}
+	
+	#slide1 .col-lg-7, #slide2 .col-lg-7, #slide3 .col-lg-7{
+		align-content: center;
+	}
+
 @media (min-width: 992px){
 		#slide1, #slide2, #slide3{
 		height: calc(100vh - 148px);
 		padding: 10rem;
 		align-content: center;
+	
 	}
 
 		#slide1{
@@ -341,6 +361,14 @@
 		font-family: "Lato";
 		font-size: 21px;;
 		font-weight: 400;
+	}
+	
+	#slide1 .col-lg-5, #slide2 .col-lg-5, #slide3 .col-lg-5{
+		align-content: center;
+	}
+	
+	#slide1 .col-lg-7, #slide2 .col-lg-7, #slide3 .col-lg-7{
+		align-content: center;
 	}
 }
 
