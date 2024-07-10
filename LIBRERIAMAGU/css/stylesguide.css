@@ -1,0 +1,34 @@
+@charset "utf-8";
+/* CSS Document */
+
+:root {
+verde: rgba(105, 170, 97, 1);
+amarillo: rgba(245, 193, 102, 1);
+rojo: rgba(211, 105, 84, 1);
+gris-2: rgba(230, 230, 230, 1);
+gris-texto: rgba(132, 132, 132, 1);
+h1-font-family: "Lato", Helvetica;
+h1-font-weight: 700;
+h1-font-size: 50px;
+h1-letter-spacing: 0px;
+h1-line-height: normal;
+h1-font-style: normal;
+p-font-family: "Lato", Helvetica;
+p-font-weight: 400;
+p-font-size: 16px;
+p-letter-spacing: -0.32px;
+p-line-height: 122.00000286102295%;
+p-font-style: normal;
+nombre-libro-font-family: "Lato", Helvetica;
+nombre-libro-font-weight: 400;
+nombre-libro-font-size: 18px;
+nombre-libro-letter-spacing: -0.36px;
+nombre-libro-line-height: 122.00000286102295%;
+nombre-libro-font-style: normal;
+}
+
+#contenedorprincipal{
+	margin: 0px;
+	padding: 0px;
+}
+
