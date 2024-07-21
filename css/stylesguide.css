@@ -90,10 +90,6 @@ nombre-libro-font-style: normal;
 }
 
 
-#navbar {
-	padding-top: 8px ;
-	
-}
 
 
 #logo-container{
@@ -106,7 +102,7 @@ nombre-libro-font-style: normal;
 
 .search{
 	--padding: 8px;
-	height: 44px;
+	height: 40px;
 	display: flex;
 	align-items: center;
 	padding: var(--padding);
@@ -121,7 +117,7 @@ nombre-libro-font-style: normal;
 }
 
 .search-input{
-	font-size: 20px;
+	font-size: 18px;
 	font-family: "Lato", sans-serif;
 	font-weight: 400;
 	line-height: normal;
@@ -142,8 +138,10 @@ nombre-libro-font-style: normal;
 .text-icon{
 	
 	font-size: 1.5rem;
-	color: #D36954;
+	color: #343a40;
 }
+
+
 
 #logo-container img{
 	margin: auto;
@@ -160,12 +158,16 @@ nombre-libro-font-style: normal;
 }
 
 
+#search-mobile{
+	margin-bottom: 8px;
+}
 
 
 
 #logo {
 	max-height: 44px;
 }
+
 
 .navbar-collapse {
   position: fixed;
@@ -211,6 +213,7 @@ nombre-libro-font-style: normal;
 
 .dropdown a{
 	text-align: left;
+	position: relative;
 	border:none;
 	color: black;
 }
@@ -240,32 +243,79 @@ nombre-libro-font-style: normal;
 
 @media (min-width: 992px){
 	
-	.offcanvas-body{
-		margin-left: 25%;
-	}
+		.offcanvas-body{
+			margin-left: 25%;
+		}
+
+		.dropdown ul{
+			background-color: fff;
+			border: none;
+			border-radius: 0px 0px 16px 16px;
+			box-shadow: 0px 15px 16px 0px rgba(0,0,0,0.1);
+		}
 	
-	.dropdown ul{
-		background-color: fff;
+		.dropdown a{
+			text-align: left;
+			position: relative;
+		}
+	
+
+
+		.dropdown:hover .dropdown-menu {
+			display: block;
+		}
+		.offcanvas{
+		padding: 0px;	
+	}
+
+		#navbar{
+			padding-top: 8px!important;
+		}
+
+		.search-input{
+		font-size: 20px;
+		font-family: "Lato", sans-serif;
+		font-weight: 400;
+		line-height: normal;
+		margin-left: var(--padding);
+		color: #959595;
+		outline: none;
 		border: none;
-		border-radius: 0px 0px 16px 16px;
-		box-shadow: 0px 15px 16px 0px rgba(0,0,0,0.1);
+		background: transparent;
+		flex: 1;
+	}
+
+		.search{
+		--padding: 8px;
+		height: 44px;
+		display: flex;
+		align-items: center;
+		padding: var(--padding);
+		border-radius: 8px;
+		background: #f6f6f6;
+		width: 100%;
+		transition: box-shadow 0.25s;
 	}
 	
-	.dropdown:hover .dropdown-menu {
-		display: block;
+	#search-mobile{
+		display: none;
 	}
-	.offcanvas{
-	padding: 0px;	
-}
+	
+	#footer{
+		padding-top: 1rem;
+	}
 	
 }
 
+#navbar {
+		padding-top: 0px;
+	}
 
 #iconos-derecha .text-icon{
 	
 	font-size: 1.5rem;
 	margin: 2px;
-	color: black;
+	color:  #343a40;
 }
 
 #iconos-derecha .text-icon:hover{
@@ -274,7 +324,7 @@ nombre-libro-font-style: normal;
 
 #icons-menu .text-icon{
 	font-size: 1.5rem;
-	color: black;
+	color: #343a40;
 	margin: 2px; 
 }
 
@@ -282,6 +332,74 @@ nombre-libro-font-style: normal;
 	font-size: 1.5rem;
 	color: #D36954;
 	margin: 2px; 
+}
+
+
+
+
+
+.product-img{
+	position: relative;
+	overflow: hidden;
+}
+
+.btns{
+	position: absolute;
+	left: 0;
+	bottom: -100;
+	font-size: 15px;
+	font-weight: 300;
+	transition: all 0.3s ease-in-out;
+}
+
+.btns button{
+	border: none;
+	background-color: rgba(39,39,39,1);
+	color: #fff;
+	transition: all 0.3s ease-in-out;
+}
+
+.btns button:hover{
+	color: #fcb941;
+}
+
+.product-img:hover .btns{
+	bottom: 0;
+}
+
+.heart-icon{
+	position: absolute;
+	top: 16px;
+	right: 15px;
+	font-size: 18px;
+	
+}
+
+.product-type{
+	font-size: 13px;
+	opacity: 0.8;
+}
+
+.book-title{
+	transition: all 0.3s ease-in-out;
+}
+
+.book-title:hover{
+	color: #D36954!important;
+}
+
+.product-price{
+	color: #D36954;
+	font-size: 16px;
+}
+
+.book-author{
+	font-size: 14px;
+	color: #959595;
+}
+
+.rating{
+	font-size: 13px;
 }
 
 #footer .container{
@@ -307,4 +425,12 @@ nombre-libro-font-style: normal;
 
 #footer .btn-primary:hover{
 	background-color: #EE755D;
+}
+
+#footer .text-icon{
+	color: #343a40;
+}
+
+#footer .text-icon:hover{
+	color: #D36954;
 }
