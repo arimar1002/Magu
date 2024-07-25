@@ -27,6 +27,11 @@ nombre-libro-line-height: 122.00000286102295%;
 nombre-libro-font-style: normal;
 }
 
+.form-check-input:checked{
+	background-color: #D36954!important; 
+	border-color: #D36954!important;
+}
+
 #contenedorprincipal{
 	margin: 0px;
 	padding: 0px;
@@ -44,7 +49,7 @@ nombre-libro-font-style: normal;
 #header {
 	margin: 0px;
 	padding: 0px;
-
+	box-shadow: 0px 3px 4px 0px rgba(0,0,0,0.1);
 }
 
 #carousel-header{
@@ -57,7 +62,12 @@ nombre-libro-font-style: normal;
 	line-height: normal;
 }
 
-
+@media (max-width: 576px){
+	#carousel-header{
+		height: 36px;
+		font-size: 14px;
+	}
+}
 
 #carousel-header .carousel-inner {
   margin: 0px;
@@ -334,9 +344,64 @@ nombre-libro-font-style: normal;
 	margin: 2px; 
 }
 
+#side-bar{
+	width: 250px;
+	margin-left: 2rem;
+	margin-top: 6rem;
+}
 
+.container-body{
+	padding-top:  2rem;
+}
 
+.container-body h1{
+	text-align: center;
+	font-family: "Phudu", "Lato", sans-serif; 
+}
 
+.container-body p{
+	text-align: center;
+	font-family: "Lato", sans-serif; 
+	font-size: 18px;
+	font-weight: 400;
+	color: var(--dark);
+}
+
+.accordion-item{
+	border: none!important;
+}
+
+.accordion-item h3 a{
+	color: black!important;
+}
+
+.categories{
+	margin-bottom: 0.5rem;
+}
+
+.accordion-button{
+	border-radius: 0px!important;
+}
+
+.accordion-button:not(.collapsed){
+	background-color: white!important;
+}
+
+.accordion-header a{
+	font-size: 1rem;
+	margin-left: 1.25rem;
+	margin-top: 0px;
+	font-weight: 400;
+	color: #DE614D!important;
+}
+
+h2.accordion-header{
+	line-height: 1.5rem;
+}
+
+#side-bar .accordion-item label{
+	color: #DE614D!important;
+}
 
 .product-img{
 	position: relative;
@@ -372,7 +437,33 @@ nombre-libro-font-style: normal;
 	top: 16px;
 	right: 15px;
 	font-size: 18px;
-	
+	color: white;
+}
+
+
+.product-header{
+	font-style: italic;
+	font-size: 36px;
+	font-weight: 700;
+	font-family: "Lato", sans-serif;
+}
+
+@media (max-width:992px){
+	.product-header{
+		font-size: 32px;
+	}
+}
+
+@media (max-width:768px){
+	.product-header{
+		font-size: 26px;
+	}
+}
+
+@media (max-width:576px){
+	.product-header{
+		font-size: 24px;
+	}
 }
 
 .product-type{

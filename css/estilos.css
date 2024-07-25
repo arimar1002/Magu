@@ -74,7 +74,7 @@
 
 #slide1 p, #slide2 p, #slide3 p{
 	font-family: "Lato";
-	font-size: 18px;;
+	font-size: 16px;;
 	font-weight: 400;
 }
 
@@ -98,12 +98,13 @@
 	}
 
 @media (min-width: 992px){
-		#slide1, #slide2, #slide3{
+	#slide1, #slide2, #slide3{
 		height: calc(100vh - 148px);
-		padding: 10rem;
+		padding: 6rem;
 		align-content: center;
 	
 	}
+
 
 		#slide1{
 		background-color: #fef3dd;
@@ -117,6 +118,64 @@
 		background-color: yellow;
 	}
 
+
+		#slide1 h1, #slide2 h1, #slide3 h1{
+		font-family: "Phudu";
+		font-size: 3rem;
+		font-weight: 700;
+	}
+
+		#slide1 p, #slide2 p, #slide3 p{
+		font-family: "Lato";
+		font-size: 18px;;
+		font-weight: 400;
+	}
+	
+	#slide1 .col-lg-5, #slide2 .col-lg-5, #slide3 .col-lg-5{
+		align-content: center;
+	}
+	
+	#slide1 .col-lg-7, #slide2 .col-lg-7, #slide3 .col-lg-7{
+		align-content: center;
+	}
+}
+
+@media (min-width: 1200px){
+	#slide1, #slide2, #slide3{
+		height: calc(100vh - 148px);
+		padding: 7rem;
+		align-content: center;
+	
+	}
+
+		#slide1 h1, #slide2 h1, #slide3 h1{
+		font-family: "Phudu";
+		font-size: 3rem;
+		font-weight: 700;
+	}
+
+		#slide1 p, #slide2 p, #slide3 p{
+		font-family: "Lato";
+		font-size: 18px;;
+		font-weight: 400;
+	}
+	
+	#slide1 .col-lg-5, #slide2 .col-lg-5, #slide3 .col-lg-5{
+		align-content: center;
+	}
+	
+	#slide1 .col-lg-7, #slide2 .col-lg-7, #slide3 .col-lg-7{
+		align-content: center;
+	}
+}
+
+@media (min-width: 1400px){
+	#slide1, #slide2, #slide3{
+		height: calc(100vh - 148px);
+		padding: 10rem;
+		align-content: center;
+	
+	}
 
 		#slide1 h1, #slide2 h1, #slide3 h1{
 		font-family: "Phudu";
@@ -155,7 +214,33 @@
 	filter: drop-shadow(0rem 0rem 0.3rem rgba(0,0,0,0.2));
 }
 
+#jumbotron{
+	background-image: url("../images/Banner-quiz.png");
+	background-size: cover;
+	background-position: center;
+	padding: 10%;
+}
 
+
+
+#jumbotron .btn-lg{
+	background-color: #D36954;
+	color: white;
+	font-weight: 400;
+	box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.15);
+}
+
+#jumbotron .btn-lg:hover{
+	background-color: #EE755D;
+}
+
+
+#jumbotron h1{
+	font-family: "Phudu";
+	font-weight: 600;
+	color: white;
+	text-shadow: 0px 0px 4px 0px rgba(0,0,0,0.15);
+}
 
 #carousel-body .carousel-control-prev,
 #carousel-body .carousel-control-next {

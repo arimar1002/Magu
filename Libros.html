@@ -4,18 +4,18 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap - Prebuilt Layout</title>
-
+    <title>Libros</title>
+	  
+<link href="css/estilos_libros.css" rel="stylesheet" type="text/css">
 	<link href="css/stylesguide.css" rel="stylesheet" type="text/css">
 	<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Phudu:wght@300..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"> 
 	<link href="css/bootstrap-4.4.1.css" rel="stylesheet" type="text/css">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-
-	
-    <!-- Bootstrap -->
-    <!-- Bootstrap URL-->
+ <!--ow-carousel-->
+	<link rel="stylesheet" href="owl-carousel/owl.carousel.css">
+	<link rel="stylesheet" href="owl-carousel/owl.theme.default.css">
 
   </head>
   <body>
@@ -25,7 +25,7 @@
       <div id="header" class="container-fluid" >
 			
 			<!--BANNER CON ANUNCIOS ARRIBA EN HEADER -->
-		 
+	
 		  <div id="carousel-header" class="carousel slide" data-ride="carousel" style="background-color: black">
 			 
 			  <div class="carousel-inner" role="listbox">
@@ -70,7 +70,7 @@
 				
 			<i class="bi bi-geo-alt text-icon fa-xl"></i>
 				
-			<i class="bi bi-heart text-icon fa-xl"  fill="currentColor"></i>
+			<i class="bi bi-heart text-icon fa-xl"  ></i>
 			<i class="bi bi-bag text-icon fa-xl"></i>
 		    </div>
 		  </div>
@@ -97,12 +97,13 @@
         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
       </div>
       <div class="offcanvas-body col-lg-6 " >
-        <ul class="navbar-nav  nav nav-pills nav-fill flex-grow-1 pe-3 ">
+        <ul class="navbar-nav nav nav-pills nav-fill flex-grow-1 pe-3 ">
 			<li class="nav-item dropdown">
-            <a data-target="Libros.html" target="_self" class="nav-link mx-lg-2 dropdown-toggle" href="Libros.html" aria-current="page" aria-expanded="false" >
+            <a class="nav-link mx-lg-2 dropdown-toggle  " href="Libros.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Libros
             </a>
-            <ul class="dropdown-menu ">
+            <ul class="dropdown-menu">
+			  <li><a class="dropdown-header" href="Libros.html">VER TODO</a></li>
 			  <li><span class="dropdown-header">CATEGORÍAS</span></li>	
               <li><a class="dropdown-item" href="#">Autoayuda</a></li>
               <li><a class="dropdown-item" href="#">Biografías</a></li>
@@ -117,11 +118,11 @@
             </ul>
           </li>
 	      <li class="nav-item dropdown">
-            <a data-target="Nosotros.html" target="_self" class="nav-link mx-lg-2 dropdown-toggle" href="Nosotros.html" role="button"  aria-expanded="false">
+            <a class="nav-link mx-lg-2 dropdown-toggle  " href="Nosotros.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Nosotros
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="Libros.html">Nosotros</a></li>
+              <li><a class="dropdown-item" href="#">Nosotros</a></li>
               <li><a class="dropdown-item" href="#">Another action</a></li>
               <li>
                 <hr class="dropdown-divider">
@@ -140,6 +141,10 @@
     </div>
   </div>
 </nav>
+		  
+		  
+		  
+		  
 	    <div id="search-mobile" class="container-fluid">
 		  <form>
 				<div class="search d-lg-none">
@@ -149,19 +154,606 @@
 		  </form>
 		  </div>
         </div>
+
+		 
+		 <!--Sidebar filter-->
+	     
+		<div class="accordion position-absolute" id="side-bar">
+			
+		  <div class="accordion-item categories">
+	    <h3 class="accordion-header"><a>CATEGORÍAS</a></h3>
+ 		<h2 class="accordion-header"><a>Autoayuda</a></h2>
+	    <h2 class="accordion-header"><a>Biografías</a></h2>
+	    <h2 class="accordion-header"><a>Ciencia Ficción y Fantasía</a></h2>
+		<h2 class="accordion-header"><a>Ficción</a></h2>
+	    <h2 class="accordion-header"><a>Fantasía</a></h2>
+	    <h2 class="accordion-header"><a>Horror</a></h2>
+		<h2 class="accordion-header"><a>Misterio y Suspenso</a></h2>
+	    <h2 class="accordion-header"><a>Religión</a></h2>
+	    <h2 class="accordion-header"><a>Romance</a></h2>
+  		</div>
+
+	   
+  <div class="accordion-item">
+ 
+
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+        LENGUAJE
+      </button>
+    </h2>
+    <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+      <div class="accordion-body">
+		<div class="form-check">
+			<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+			<label class="form-check-label" for="flexCheckDefault">
+			  Español
+			</label>
+		  </div>
+		  <div class="form-check">
+			<input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+			<label class="form-check-label" for="flexCheckChecked">
+			  Inglés
+			</label>
+		  </div>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+        NÚMERO DE PÁGINAS
+      </button>
+    </h2>
+    <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+      <div class="accordion-body">
+		  
+         <div class="form-check">
+			  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+			  <label class="form-check-label" for="flexRadioDefault1">
+				50 o menos
+			  </label>
+			</div>
+			<div class="form-check">
+			  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+			  <label class="form-check-label" for="flexRadioDefault2">
+				50 - 100
+			  </label>
+			</div>
+		  	<div class="form-check">
+			  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3" checked>
+			  <label class="form-check-label" for="flexRadioDefault2">
+				100 - 150
+			  </label>
+			</div>
+		    <div class="form-check">
+			  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault4" checked>
+			  <label class="form-check-label" for="flexRadioDefault2">
+				150 - 200
+			  </label>
+			</div>
+		    <div class="form-check">
+			  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault5" checked>
+			  <label class="form-check-label" for="flexRadioDefault2">
+				200 - 250
+			  </label>
+			</div>
+		    <div class="form-check">
+			  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault6" checked>
+			  <label class="form-check-label" for="flexRadioDefault2">
+				250 - 300
+			  </label>
+			</div>
+		   <div class="form-check">
+			  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault7" checked>
+			  <label class="form-check-label" for="flexRadioDefault2">
+				300 - 350
+			  </label>
+			</div>
+		    <div class="form-check">
+			  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault8" checked>
+			  <label class="form-check-label" for="flexRadioDefault2">
+				350 - 400
+			  </label>
+			</div>
+		    <div class="form-check">
+			  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault9" checked>
+			  <label class="form-check-label" for="flexRadioDefault2">
+				400 - 450
+			  </label>
+			</div>
+		    <div class="form-check">
+			  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault10" checked>
+			  <label class="form-check-label" for="flexRadioDefault2">
+				450 - 500
+			  </label>
+			</div>
+		   <div class="form-check">
+			  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault11" checked>
+			  <label class="form-check-label" for="flexRadioDefault2">
+				500 - 550
+			  </label>
+			</div>
+		    <div class="form-check">
+			  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault12" checked>
+			  <label class="form-check-label" for="flexRadioDefault2">
+				550 - 600
+			  </label>
+			</div>
+		    <div class="form-check">
+			  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault13" checked>
+			  <label class="form-check-label" for="flexRadioDefault2">
+				600 - 650
+			  </label>
+			</div>
+		    <div class="form-check">
+			  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault14" checked>
+			  <label class="form-check-label" for="flexRadioDefault2">
+				650 - 700
+			  </label>
+			</div>
+		    <div class="form-check">
+			  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault15" checked>
+			  <label class="form-check-label" for="flexRadioDefault2">
+				700 - 750
+			  </label>
+			</div>
+		    <div class="form-check">
+			  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault16" checked>
+			  <label class="form-check-label" for="flexRadioDefault2">
+				750 - 800
+			  </label>
+			</div>
+		    <div class="form-check">
+			  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault17" checked>
+			  <label class="form-check-label" for="flexRadioDefault2">
+				800 - 850
+			  </label>
+			</div>
+		    <div class="form-check">
+			  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault18" checked>
+			  <label class="form-check-label" for="flexRadioDefault2">
+				850 - 900
+			  </label>
+			</div>
+		    <div class="form-check">
+			  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault19" checked>
+			  <label class="form-check-label" for="flexRadioDefault2">
+				900 - 950
+			  </label>
+			</div>
+		    <div class="form-check">
+			  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault20" checked>
+			  <label class="form-check-label" for="flexRadioDefault2">
+				950 - 1000
+			  </label>
+			</div>
+		    <div class="form-check">
+			  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault21" checked>
+			  <label class="form-check-label" for="flexRadioDefault2">
+				1000 o más
+			  </label>
+			</div>
+      </div>
+    </div>
+  </div>
+</div>
+	  </div>
+		 
+		 
+	  <div class="col-6 m-auto container-body" >
+		  <h1>Compra por categoría</h1>
+		  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pellentesque magna dignissim erat semper interdum. Sed eget massa molestie, cursus nisi nec, dignissim nisl. </p>
+		  
+		  <div class="container product-cards-header">
+				<div class="row my-5 mx-3 align-items-center ">
+					<h1 class="text-left product-header col-8 col-xs-10"> Autoayuda</h1>
+					<p class="fw-light  mx-auto col-4 col-xs-2 " style="text-align: end">Ver más </p>
+				</div>
+				
+			  <div class="row g-4 my-5 mx-auto ">
+				<div class="col-3 product-item mx-auto">
+					<div class="product-img">
+					<img src="images/product-1.jpg" alt="" class="img-fluid d-block mx-auto">
+						<span class="heart-icon">
+						<i class="far fa-heart"></i>
+						</span>
+						<div class="row btns w-100 mx-auto text-center">
+						<button type="button" class="col-6 py-2">
+							<i class="fa fa-cart-plus"></i> Add to cart
+						</button>
+						<button type="button" class="col-6 py-2">
+							<i class="fa fa-binoculars"></i> View
+						</button>	
+						</div>
+					</div>
+					
+					<div class="product-info ">
+					<span class="product-type">Fantasia</span>
+						<a href="#" class="d-block text-dark text-decoration-none py-2 book-title">Harry Potter and the Chamber of Secrets</a>
+						<span class="book-author">J.K Rowling</span> <br>
+					  <span class="product-price">$100</span>
+						<div class="rating d-flex mt-1">
+							<span>
+							<i class="fa fa-star"></i>
+							</span>
+							<span>
+							<i class="fa fa-star"></i>
+							</span>
+							<span>
+							<i class="fa fa-star"></i>
+							</span>
+							<span>
+							<i class="fa fa-star"></i>
+							</span>
+							<span>
+							<i class="fa fa-star"></i>
+							</span>
+							<span>(25 reviews)</span>
+						</div>
+					</div>
+					</div>
+					
+					<div class="col-3 product-item mx-auto">
+					<div class="product-img">
+					<img src="images/product-2.jpg" alt="" class="img-fluid d-block mx-auto">
+						<span class="heart-icon">
+						<i class="far fa-heart"></i>
+						</span>
+						<div class="row btns w-100 mx-auto text-center">
+						<button type="button" class="col-6 py-2">
+							<i class="fa fa-cart-plus"></i> Add to cart
+						</button>
+						<button type="button" class="col-6 py-2">
+							<i class="fa fa-binoculars"></i> View
+						</button>	
+						</div>
+					</div>
+					
+					<div class="product-info ">
+					<span class="product-type">Ficción Histórica</span>
+						<a href="#" class="d-block text-dark text-decoration-none py-2 product-name">A Tale of Two Cities</a>
+						<span class="book-author">Charles Dickens</span> <br>
+						<span class="product-price">$100</span>
+						<div class="rating d-flex mt-1">
+							<span>
+							<i class="fa fa-star"></i>
+							</span>
+							<span>
+							<i class="fa fa-star"></i>
+							</span>
+							<span>
+							<i class="fa fa-star"></i>
+							</span>
+							<span>
+							<i class="fa fa-star"></i>
+							</span>
+							<span>
+							<i class="fa fa-star"></i>
+							</span>
+							<span>(25 reviews)</span>
+						</div>
+					</div>
+					</div>
+					
+									<div class="col-3 product-item mx-auto">
+					<div class="product-img">
+					<img src="images/product-3.jpg" alt="" class="img-fluid d-block mx-auto">
+						<span class="heart-icon">
+						<i class="far fa-heart"></i>
+						</span>
+						<div class="row btns w-100 mx-auto text-center">
+						<button type="button" class="col-6 py-2">
+							<i class="fa fa-cart-plus"></i> Add to cart
+						</button>
+						<button type="button" class="col-6 py-2">
+							<i class="fa fa-binoculars"></i> View
+						</button>	
+						</div>
+					</div>
+					
+					<div class="product-info ">
+					<span class="product-type">Fantasía</span>
+						<a href="#" class="d-block text-dark text-decoration-none py-2 product-name">The Little Prince</a>
+						<span class="book-author">Antoine de Saint Exupéry</span> <br>
+						<span class="product-price">$100</span>
+						<div class="rating d-flex mt-1">
+							<span>
+							<i class="fa fa-star"></i>
+							</span>
+							<span>
+							<i class="fa fa-star"></i>
+							</span>
+							<span>
+							<i class="fa fa-star"></i>
+							</span>
+							<span>
+							<i class="fa fa-star"></i>
+							</span>
+							<span>
+							<i class="fa fa-star"></i>
+							</span>
+							<span>(25 reviews)</span>
+						</div>
+					</div>
+					</div>
+					
+									<div class="col-3 product-item mx-auto">
+					<div class="product-img">
+					<img src="images/product-4.jpg" alt="" class="img-fluid d-block mx-auto">
+						<span class="heart-icon">
+						<i class="far fa-heart"></i>
+						</span>
+						<div class="row btns w-100 mx-auto text-center">
+						<button type="button" class="col-6 py-2">
+							<i class="fa fa-cart-plus"></i> Add to cart
+						</button>
+						<button type="button" class="col-6 py-2">
+							<i class="fa fa-binoculars"></i> View
+						</button>	
+						</div>
+					</div>
+					
+					<div class="product-info ">
+					<span class="product-type">Fantasía</span>
+						<a href="#" class="d-block text-dark text-decoration-none py-2 product-name">The Alchemist</a>
+						<span class="book-author">Paulo Coelho</span> <br>
+						<span class="product-price">$100</span>
+						<div class="rating d-flex mt-1">
+							<span>
+							<i class="fa fa-star"></i>
+							</span>
+							<span>
+							<i class="fa fa-star"></i>
+							</span>
+							<span>
+							<i class="fa fa-star"></i>
+							</span>
+							<span>
+							<i class="fa fa-star"></i>
+							</span>
+							<span>
+							<i class="fa fa-star"></i>
+							</span>
+							<span>(25 reviews)</span>
+						</div>
+					</div>
+					</div>
+					
+									<div class="col-3 product-item mx-auto">
+					<div class="product-img">
+					<img src="images/product-5.jpg" alt="" class="img-fluid d-block mx-auto">
+						<span class="heart-icon">
+						<i class="far fa-heart"></i>
+						</span>
+						<div class="row btns w-100 mx-auto text-center">
+						<button type="button" class="col-6 py-2">
+							<i class="fa fa-cart-plus"></i> Add to cart
+						</button>
+						<button type="button" class="col-6 py-2">
+							<i class="fa fa-binoculars"></i> View
+						</button>	
+						</div>
+					</div>
+					
+					<div class="product-info ">
+					<span class="product-type">Fantasía</span>
+						<a href="#" class="d-block text-dark text-decoration-none py-2 product-name">Harry Potter and the Philosopher's Stone</a>
+						<span class="book-author">J.K Rowling</span> <br>
+						<span class="product-price">$100</span>
+						<div class="rating d-flex mt-1">
+							<span>
+							<i class="fa fa-star"></i>
+							</span>
+							<span>
+							<i class="fa fa-star"></i>
+							</span>
+							<span>
+							<i class="fa fa-star"></i>
+							</span>
+							<span>
+							<i class="fa fa-star"></i>
+							</span>
+							<span>
+							<i class="fa fa-star"></i>
+							</span>
+							<span>(25 reviews)</span>
+						</div>
+					</div>
+					</div>
+					
+									<div class="col-3 product-item mx-auto">
+					<div class="product-img">
+					<img src="images/product-6.jpg" alt="" class="img-fluid d-block mx-auto">
+						<span class="heart-icon">
+						<i class="far fa-heart"></i>
+						</span>
+						<div class="row btns w-100 mx-auto text-center">
+						<button type="button" class="col-6 py-2">
+							<i class="fa fa-cart-plus"></i> Add to cart
+						</button>
+						<button type="button" class="col-6 py-2">
+							<i class="fa fa-binoculars"></i> View
+						</button>	
+						</div>
+					</div>
+					
+					<div class="product-info ">
+					<span class="product-type">Misterio</span>
+						<a href="#" class="d-block text-dark text-decoration-none py-2 product-name">And Then There Were None</a>
+						<span class="book-author">Agatha Christie</span> <br>
+						<span class="product-price">$100</span>
+						<div class="rating d-flex mt-1">
+							<span>
+							<i class="fa fa-star"></i>
+							</span>
+							<span>
+							<i class="fa fa-star"></i>
+							</span>
+							<span>
+							<i class="fa fa-star"></i>
+							</span>
+							<span>
+							<i class="fa fa-star"></i>
+							</span>
+							<span>
+							<i class="fa fa-star"></i>
+							</span>
+							<span>(25 reviews)</span>
+						</div>
+					</div>
+					</div>
+					
+									<div class="col-3 product-item mx-auto">
+					<div class="product-img">
+					<img src="images/product-7.jpg" alt="" class="img-fluid d-block mx-auto">
+						<span class="heart-icon">
+						<i class="far fa-heart"></i>
+						</span>
+						<div class="row btns w-100 mx-auto text-center">
+						<button type="button" class="col-6 py-2">
+							<i class="fa fa-cart-plus"></i> Add to cart
+						</button>
+						<button type="button" class="col-6 py-2">
+							<i class="fa fa-binoculars"></i> View
+						</button>	
+						</div>
+					</div>
+					
+					<div class="product-info ">
+					<span class="product-type">Fantasia</span>
+						<a href="#" class="d-block text-dark text-decoration-none py-2 product-name">The Dream of the Red Chamber</a>
+						<span class="book-author">Cao Xueqin</span> <br>
+						<span class="product-price">$100</span>
+						<div class="rating d-flex mt-1">
+							<span>
+							<i class="fa fa-star"></i>
+							</span>
+							<span>
+							<i class="fa fa-star"></i>
+							</span>
+							<span>
+							<i class="fa fa-star"></i>
+							</span>
+							<span>
+							<i class="fa fa-star"></i>
+							</span>
+							<span>
+							<i class="fa fa-star"></i>
+							</span>
+							<span>(25 reviews)</span>
+						</div>
+					</div>
+					</div>
+					
+									<div class="col-3 product-item mx-auto">
+					<div class="product-img">
+					<img src="images/product-8.jpg" alt="" class="img-fluid d-block mx-auto">
+						<span class="heart-icon">
+						<i class="far fa-heart"></i>
+						</span>
+						<div class="row btns w-100 mx-auto text-center">
+						<button type="button" class="col-6 py-2">
+							<i class="fa fa-cart-plus"></i> Add to cart
+						</button>
+						<button type="button" class="col-6 py-2">
+							<i class="fa fa-binoculars"></i> View
+						</button>	
+						</div>
+					</div>
+					
+					<div class="product-info ">
+					<span class="product-type">Fantasia</span>
+						<a href="#" class="d-block text-dark text-decoration-none py-2 product-name">The Hobbit</a>
+						<span class="book-author">J.R.R Tolkien</span> <br>
+						<span class="product-price">$100</span>
+						<div class="rating d-flex mt-1">
+							<span>
+							<i class="fa fa-star"></i>
+							</span>
+							<span>
+							<i class="fa fa-star"></i>
+							</span>
+							<span>
+							<i class="fa fa-star"></i>
+							</span>
+							<span>
+							<i class="fa fa-star"></i>
+							</span>
+							<span>
+							<i class="fa fa-star"></i>
+							</span>
+							<span>(25 reviews)</span>
+						</div>
+					</div>
+					</div>
+					
+									<div class="col-3 product-item mx-auto">
+					<div class="product-img">
+					<img src="images/product-9.jpg" alt="" class="img-fluid d-block mx-auto">
+						<span class="heart-icon">
+						<i class="far fa-heart"></i>
+						</span>
+						<div class="row btns w-100 mx-auto text-center">
+						<button type="button" class="col-6 py-2">
+							<i class="fa fa-cart-plus"></i> Add to cart
+						</button>
+						<button type="button" class="col-6 py-2">
+							<i class="fa fa-binoculars"></i> View
+						</button>	
+						</div>
+					</div>
+					
+					<div class="product-info ">
+					<span class="product-type">Misterio</span>
+						<a href="#" class="d-block text-dark text-decoration-none py-2 product-name">The Da Vinci Code</a>
+						<span class="book-author">Dan Brown</span> <br>
+						<span class="product-price">$100</span>
+						<div class="rating d-flex mt-1">
+							<span>
+							<i class="fa fa-star"></i>
+							</span>
+							<span>
+							<i class="fa fa-star"></i>
+							</span>
+							<span>
+							<i class="fa fa-star"></i>
+							</span>
+							<span>
+							<i class="fa fa-star"></i>
+							</span>
+							<span>
+							<i class="fa fa-star"></i>
+							</span>
+							<span>(25 reviews)</span>
+						</div>
+					</div>
+					</div>
+					
+					
+					
+				</div>
+			</div>
+		 
+		 </div>
+	  <!--fin contenedor principal-->  
 	  </div>
 	  
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
-    <!-- JQuery JS URL-->
-
-    <!-- Include all compiled plugins (below), or include individual files as needed --> 
-    <!-- Popper JS URL-->
-    <!-- Bootstrap JS URL-->
-		<!-- Include all compiled plugins (below), or include individual files as needed -->
-  <script src="js/popper.min.js"></script>
-  <script src="js/jquery-3.4.1.min.js"></script>
+	  
+	  
+   <!--Scripts -->
+  <script src="js/jquery-3.4.1.min.js"></script> 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	  
   <script src="js/bootstrap-4.4.1.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   <script src="https://kit.fontawesome.com/d3c830f29d.js" crossorigin="anonymous"></script>
+	  
+  <script src="owl-carousel/owl.carousel.js"></script>
+
+  <script src="js/script.js"></script>
   </body>
 </html>
+
