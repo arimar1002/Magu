@@ -35,6 +35,7 @@ nombre-libro-font-style: normal;
 #contenedorprincipal{
 	margin: 0px;
 	padding: 0px;
+	margin-top: 150px;
 }
 
 .btn-lg, .btn-group-lg > .btn {
@@ -50,6 +51,10 @@ nombre-libro-font-style: normal;
 	margin: 0px;
 	padding: 0px;
 	box-shadow: 0px 3px 4px 0px rgba(0,0,0,0.1);
+	z-index: 3000;
+	position: fixed;
+	top: 0px;
+	background-color: white
 }
 
 #carousel-header{
@@ -169,7 +174,7 @@ nombre-libro-font-style: normal;
 
 
 #search-mobile{
-	margin-bottom: 8px;
+	padding-bottom: 8px;
 }
 
 
@@ -177,6 +182,7 @@ nombre-libro-font-style: normal;
 #logo {
 	max-height: 44px;
 }
+
 
 
 .navbar-collapse {
@@ -207,14 +213,13 @@ nombre-libro-font-style: normal;
   top: 100%;
   left: 0;
   z-index: 1000;
-  display: none;
-  float: left;
+  display: inline-block;
   min-width: 10rem;
   padding: 0.5rem 0;
   margin: 0.125rem 0 0;
   font-size: 1rem;
   color: #212529;
-  text-align: left;
+  text-align: center;
   list-style: none;
   background-color: fff;
   background-clip: padding-box;
@@ -251,12 +256,61 @@ nombre-libro-font-style: normal;
 	
 }
 
+.dropdown-item:active{
+	background-color: #D36954!important;
+	color: white!important;
+}
+
+.dropdown .text-align-left{
+			text-align: left;
+		}
+
+.form-select{
+	margin-left: 5px;
+	
+}
+
+#filter{
+	border-color: var(--bs-border-color);
+	border-radius: var(--bs-border-radius);
+	font-size: 1rem;
+}
+
+#order{
+	display: none;
+}
+
 @media (min-width: 992px){
 	
 		.offcanvas-body{
 			margin-left: 25%;
 		}
-
+    
+	#offcanvasResponsive .offcanvas-body{
+		display: block;
+		margin-left: 0px;
+	}	
+	
+	#offcanvasResponsive .btn{
+		width: 100%;
+	}
+	
+	#order{
+		display: flex;
+		align-items: center;
+		padding: 0px!important;
+		
+	}
+	
+	#order .label{
+		width: 200px;
+	}
+	
+	#order-mobile{
+		display: none;
+	}
+	
+	
 		.dropdown ul{
 			background-color: fff;
 			border: none;
@@ -265,15 +319,18 @@ nombre-libro-font-style: normal;
 		}
 	
 		.dropdown a{
-			text-align: left;
+			text-align: center!important;
 			position: relative;
 		}
 	
-
+		.dropdown .text-align-left{
+			text-align: left!important;
+		}
 
 		.dropdown:hover .dropdown-menu {
 			display: block;
 		}
+	
 		.offcanvas{
 		padding: 0px;	
 	}
@@ -315,7 +372,46 @@ nombre-libro-font-style: normal;
 		padding-top: 1rem;
 	}
 	
+	#sidebar{
+		width: 20%;
+		position: absolute;
+		top: 150px;
+		left: 5%;
+	}
+	
+
+	.accordion-body{
+		padding: 6px!important;
+	}
+	
+	.accordion-body p{
+		font-size: 14px;
+	}
+	
+	.field span{
+		font-size: 14px;
+		padding: 0px;
+	}
+	
+	#offcanvasResponsive{
+		width:100%;
+		padding: 0px;
+		margin-left: 0px;
+		position: relative;
+	
+	}
+	
+	
+	
+	
+	#products-body{
+		width: 50%;
+		left: 25%;
+		position: relative;
+	}
 }
+
+
 
 #navbar {
 		padding-top: 0px;
@@ -344,11 +440,6 @@ nombre-libro-font-style: normal;
 	margin: 2px; 
 }
 
-#side-bar{
-	width: 250px;
-	margin-left: 2rem;
-	margin-top: 6rem;
-}
 
 .container-body{
 	padding-top:  2rem;
@@ -385,6 +476,7 @@ nombre-libro-font-style: normal;
 
 .accordion-button:not(.collapsed){
 	background-color: white!important;
+	color: black!important;
 }
 
 .accordion-header a{
@@ -403,6 +495,40 @@ h2.accordion-header{
 	color: #DE614D!important;
 }
 
+
+
+#offcanvasResponsive{
+	z-index: 3000;
+	height: auto;
+}
+
+#order{
+	margin: 0px;
+	padding:0px 5px 0px 5px;
+}
+
+@media (max-width: 1200px){
+	#side-bar{
+		display: none;
+		position: absolute;
+		top: 150px;
+		height: auto;
+	}
+	
+	
+	
+	
+}
+
+@media (min-width:1201px){
+	
+	#products-body{
+	margin-top: 0px;
+	padding-top: 0rem; 
+}
+	
+}
+
 .product-img{
 	position: relative;
 	overflow: hidden;
@@ -419,8 +545,8 @@ h2.accordion-header{
 
 .btns button{
 	border: none;
-	background-color: rgba(39,39,39,1);
-	color: #fff;
+	filter: blur();
+	color: --dark;
 	transition: all 0.3s ease-in-out;
 }
 
@@ -441,11 +567,123 @@ h2.accordion-header{
 }
 
 
+
+
+::selection{
+  color: #fff;
+  background: #17A2B8;
+}
+.wrapper{
+  width: 100%;
+  background: #fff;
+  border-radius: 10px;
+  
+
+}
+header h2{
+  font-size: 24px;
+  font-weight: 600;
+}
+header p{
+  margin-top: 5px;
+  font-size: 16px;
+}
+
+.price-input{
+  width: 100%;
+  display: flex;
+  margin: 30px 0 35px;
+}
+
+.price-input .field{
+  display: flex;
+  width: 100%;
+  height: 34px;
+  align-items: center;
+}
+
+.field input{
+  width: 100%;
+  height: 100%;
+  outline: none;
+  font-size: 14px;
+  margin-left: 6px;
+  border-radius: 5px;
+  text-align: center;
+  border: 1px solid #999;
+  -moz-appearance: textfield;
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+.price-input .separator{
+  width: 80px;
+  display: flex;
+  font-size: 19px;
+  align-items: center;
+  justify-content: center;
+}
+.slider{
+  height: 5px;
+  position: relative;
+  background: #ddd;
+  border-radius: 5px;
+}
+.slider .progress{
+  height: 100%;
+  left: 0%;
+  right: 0%;
+  position: absolute;
+  border-radius: 5px;
+  background: #D36954;
+}
+.range-input{
+  position: relative;
+}
+.range-input input{
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  top: -5px;
+  background: none;
+  pointer-events: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+input[type="range"]::-webkit-slider-thumb{
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  background: #D36954;
+  pointer-events: auto;
+  -webkit-appearance: none;
+  box-shadow: 0 0 6px rgba(0,0,0,0.05);
+}
+input[type="range"]::-moz-range-thumb{
+  height: 17px;
+  width: 17px;
+  border: none;
+  border-radius: 50%;
+  background: #D36954;
+  pointer-events: auto;
+  -moz-appearance: none;
+  box-shadow: 0 0 6px rgba(0,0,0,0.05);
+}
+
+
+
+
+
 .product-header{
 	font-style: italic;
 	font-size: 36px;
 	font-weight: 700;
 	font-family: "Lato", sans-serif;
+}
+
+.hr{
+	width:100%;
 }
 
 @media (max-width:992px){
@@ -464,6 +702,13 @@ h2.accordion-header{
 	.product-header{
 		font-size: 24px;
 	}
+	
+	
+}
+
+#products-body{
+	margin-top: 0px;
+	padding: 2rem; 
 }
 
 .product-type{
@@ -483,6 +728,8 @@ h2.accordion-header{
 	color: #D36954;
 	font-size: 16px;
 }
+
+
 
 .book-author{
 	font-size: 14px;
