@@ -751,9 +751,11 @@ input[type="range"]::-moz-range-thumb{
 }
 
 #footer-container {
-	background-color: #F6F6F6;
+	background-color: #F6F6F6!important;
 	margin-top: 1.5rem;
 }
+
+
 
 #footer .btn-primary{
 	background-color: #D36954;
@@ -771,4 +773,116 @@ input[type="range"]::-moz-range-thumb{
 
 #footer .text-icon:hover{
 	color: #D36954;
+}
+
+#footer a{
+	color: #D36954;
+}
+/*-------------PRODUCT DETAIL PAGE---------------*/
+#contenedor-product{
+	margin-top: 80px;
+}
+
+.small-img-group{
+	display: flex;
+	justify-content: space-between;
+}
+
+.small-img-col{
+	flex-basis: 24%;
+	cursor: pointer;
+}
+
+.sproduct select{
+	display: block;
+	padding: 5px 10px;
+}
+
+.sproduct input{
+	width: 50px;
+	height: 40px;
+	padding-left: 10px;
+	font-size: 16px;
+	margin-right: 10px;
+
+}
+
+.sproduct input:focus{
+	outline: none;
+	
+}
+
+#contenedor-product .buy-btn{
+	color: #fff;
+	background-color: #D36954;
+	border: none;
+	padding: 0.5rem 1.3rem!important;
+	transition: 0.3s all;
+	width: 165px;
+}
+
+#contenedor-product .buy-btn:hover{
+	background-color: #EE755D;
+}
+
+#contenedor-product h1{
+	font-family: "Lato", sans-serif;
+	font-weight: 600;
+	line-height: 2.5rem;
+}
+
+#contenedor-product h5{
+	font-family: "Lato", sans-serif;
+	font-size: 1.1rem;
+	color: black;
+}
+
+#contenedor-product i{
+	font-size: 1.5rem;
+	margin: 8px;
+	color: var(--dark);
+}
+
+#contenedor-product i:hover{
+	font-size: 1.5rem;
+	margin: 8px;
+	color: #D36954;
+}
+
+#contenedor-product .choice{
+	width: 120px;
+}
+
+#contenedor-product .choice:hover{
+	width: 120px;
+	background-color: white;
+	color: black;
+ 	-webkit-box-shadow:inset 0px 0px 0px 3px #D36954;
+  	-moz-box-shadow:inset 0px 0px 0px 3px #D36954;
+  	box-shadow:inset 0px 0px 0px 3px #D36954;
+	border-color: #D36954;
+
+}
+
+.special{
+	width: 120px;
+	background-color: white;
+	color: black;
+ 	-webkit-box-shadow:inset 0px 0px 0px 3px #D36954;
+  	-moz-box-shadow:inset 0px 0px 0px 3px #D36954;
+  	box-shadow:inset 0px 0px 0px 3px #D36954;
+	border-color: #D36954!important;
+
+}
+
+#reccomended{
+	margin-top: 6rem;
+}
+
+.table{
+	margin-top: 6rem;
+}
+
+#contenedor-product .h4{
+	margin-top: 8rem;
 }

@@ -19,6 +19,14 @@ $('.owl-carousel').owlCarousel({
     }
 });
 
+
+
+
+
+
+
+
+
 const rangeInput = document.querySelectorAll(".range-input input"),
 priceInput = document.querySelectorAll(".price-input input"),
 range = document.querySelector(".slider .progress");
@@ -57,3 +65,50 @@ rangeInput.forEach(input =>{
         }
     });
 });
+
+
+var MainImg = document.getElementById('MainImg');
+var smallimg = document.getElementsByClassName('small-img');
+
+smallimg[0].onclick = function(){
+	MainImg.src = smallimg[0].src;
+}
+
+smallimg[1].onclick = function(){
+	MainImg.src = smallimg[1].src;
+}
+
+smallimg[2].onclick = function(){
+	MainImg.src = smallimg[2].src;
+}
+
+smallimg[3].onclick = function(){
+	MainImg.src = smallimg[3].src;
+}
+
+
+
+
+
+var Price = document.getElementById('Price');
+var choice = document.getElementsByClassName('choice');
+
+choice[0].onclick = function(){
+	Price.innerHTML = "Lps. 600";
+}
+
+choice[1].onclick = function(){
+	Price.innerHTML = "Lps. 500";
+}
+
+
+const btnElList = document.querySelectorAll('.btn');
+
+btnElList.forEach(btnEl => {
+	btnEl.addEventListener('click', () => {
+ document.querySelector('.special')?.classList.remove('special');
+		btnEl.classList.add('special');
+	})
+	
+})
+
