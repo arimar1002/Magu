@@ -36,6 +36,7 @@ nombre-libro-font-style: normal;
 	margin: 0px;
 	padding: 0px;
 	margin-top: 150px;
+	min-height: 100vh; 
 }
 
 .btn-lg, .btn-group-lg > .btn {
@@ -45,6 +46,27 @@ nombre-libro-font-style: normal;
   border-radius: 0.5rem!important;
   font-family: "Lato", sans-serif;
 
+}
+
+.btn-primary{
+	background-color: #D36954!important;
+	border-color: #D36954!important;
+}
+
+.btn-primary:hover{
+	background-color: #EE755D!important;
+	border-color: #EE755D!important;
+}
+
+
+.btn-secondary{
+	background-color: #f8b93a!important;
+	border-color: #fac255!important;
+}
+
+.btn-secondary:hover{
+	background-color: #f6a709!important;
+	border-color: #f6a709!important;
 }
 
 #header {
@@ -462,6 +484,10 @@ nombre-libro-font-style: normal;
 	border: none!important;
 }
 
+#checkout .accordion-button:not(.collapsed){
+	background-color: #f6f6f6!important;
+}
+
 .accordion-item h3 a{
 	color: black!important;
 }
@@ -748,12 +774,16 @@ input[type="range"]::-moz-range-thumb{
 	padding-left: calc(var(--bs-gutter-x)*.5);
 	margin-left: auto;
 	margin-right: auto;
+
 }
 
 #footer-container {
-	background-color: #F6F6F6!important;
+	background-color: #f4f4f4!important;
 	margin-top: 1.5rem;
+	
+	width: 100%;
 }
+
 
 
 
@@ -879,10 +909,14 @@ input[type="range"]::-moz-range-thumb{
 	margin-top: 6rem;
 }
 
-.table{
+#specs .table{
 	margin-top: 6rem;
 }
 
 #contenedor-product .h4{
 	margin-top: 8rem;
+}
+
+.form-select {
+    margin-left: 0px;
 }
