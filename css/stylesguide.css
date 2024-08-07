@@ -33,6 +33,10 @@ a {
   background-color: transparent;
 }
 
+.pagination a{
+	 color: #D36954;
+}
+
 .form-check-input:checked{
 	background-color: #D36954!important; 
 	border-color: #D36954!important;
@@ -45,8 +49,17 @@ a {
 	height: auto; 
 }
 
+#contenedorsecundario{
+	margin-top: 150px;
+	height: auto; 
+}
+
 @media(max-width: 768px){
 	#contenedorprincipal h1{
+		font-size: 1.8rem!important;
+	}
+	
+	#contenedorsecundario h1{
 		font-size: 1.8rem!important;
 	}
 }
@@ -408,8 +421,8 @@ a {
 	
 	#sidebar{
 		width: 20%;
-		position: absolute;
-		top: 150px;
+		position: fixed;
+		top: 195px;
 		left: 5%;
 	}
 	
@@ -958,7 +971,7 @@ input[type="range"]::-moz-range-thumb{
 top: 13px;
 }
 
-/*-------------WISHLIST---------------*/
+/*-------------ABOUT US---------------*/
 
 #about-us h6{
 	font-size: 19px;
@@ -971,4 +984,77 @@ top: 13px;
 	font-family: "Lato", sans-serif;
 	font-weight: 500;
 	color: var(--dark);
+}
+
+/*-------------EVENTS---------------*/
+
+
+
+.events_area .event-link {
+    color: #fdc632;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+.events_area .event-link img {
+    margin-left: 5px;
+    display: inline-block;
+}
+
+.single_event {
+    margin-bottom: 30px;
+}
+.single_event .event_thumb {
+    overflow: hidden;
+	max-height: 550px;
+}
+
+.event_thumb img{
+	height: 600px;
+}
+
+.single_event .event_thumb img {
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
+.single_event .event_details {
+    background: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 275px;
+    padding: 30px 25px;
+    color: #ffffff;
+}
+.single_event .event_details .date {
+    color: #ffffff;
+    padding-right: 15px;
+    border-right: 2px solid #fff;
+    font-family: "Lato", sans-serif;
+    font-size: 14px;
+}
+.single_event .event_details .date span {
+    display: block;
+    color: #fdc632;
+    font-size: 28px;
+    font-weight: 500;
+}
+.single_event .event_details .time-location {
+    padding-left: 15px;
+    font-size: 14px;
+}
+.single_event .event_details .time-location p {
+    margin-bottom: 0px;
+}
+.single_event .event_details .time-location p span {
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 500;
+}
+.single_event:hover img {
+    transform: scale(1.1);
+}
+.single_event:hover h4 a {
+    color: #fdc632;
 }
