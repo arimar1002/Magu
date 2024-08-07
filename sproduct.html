@@ -5,7 +5,6 @@
 <title>Detalles del producto</title>
 	
 	
-	
 	<link href="css/stylesguide.css" rel="stylesheet" type="text/css">
 	<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Phudu:wght@300..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
@@ -20,11 +19,14 @@
 
 <body>
 	
-	 <!--HEADER-->
+	  <!--HEADER-->
       <div id="header" class="container-fluid" >
+			<!--SIGN IN/UP-->
 			
+
 			<!--BANNER CON ANUNCIOS ARRIBA EN HEADER -->
-	
+		  
+		  
 		  <div id="carousel-header" class="carousel slide" data-ride="carousel" style="background-color: black">
 			 
 			  <div class="carousel-inner" role="listbox">
@@ -63,14 +65,9 @@
 				</form>
 			</div>
 			<div id="iconos-derecha" class="col-3 d-none d-lg-block text-center" >
-			
-			<i class="bi bi-person-circle text-icon fa-xl "></i>
-				
-				
-			<i class="bi bi-geo-alt text-icon fa-xl"></i>
-				
-			<i class="bi bi-heart text-icon fa-xl"  ></i>
-			<i class="bi bi-bag text-icon fa-xl"></i>
+			<a href="Wishlist.html" class="bi bi-heart text-icon fa-xl"></a>
+			<a href="Shopping-cart.html" class="bi bi-cart text-icon fa-xl"></a>
+		    <a href="Login.html" target="_self" class="bi bi-person-circle text-icon fa-xl "></a>
 		    </div>
 		  </div>
 	  </div>
@@ -85,20 +82,21 @@
     </button>
 	  <a class="navbar-brand  d-lg-none" href="index.html" target="_self"><img src="images/Proyecto nuevo.png"  height="24" alt=""/></a>
 	  <span id="icons-menu" class="d-lg-none ">
-
-			<i class="bi bi-heart text-icon fa-lg"  fill="currentColor"></i>
-			<i class="bi bi-bag text-icon fa-lg"></i>
+		    
+			<a href="Wishlist.html" class="bi bi-heart text-icon fa-xl"></a>
+			<a href="Shopping-cart.html" class="bi bi-cart text-icon fa-xl"></a>
+		    <a href="Login.html" target="_self" class="bi bi-person-circle text-icon fa-xl "></a>
 	  
 	  </span>
     <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
       <div class="offcanvas-header">
-        <img src="images/Proyecto nuevo.png" width="1280" height="294" alt=""/>
+        <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img src="images/Proyecto nuevo.png"  height="24" alt=""/></h5>
         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
       </div>
       <div class="offcanvas-body col-lg-6 " >
         <ul class="navbar-nav nav nav-pills nav-fill flex-grow-1 pe-3 ">
 			<li class="nav-item dropdown">
-            <a class="nav-link mx-lg-2 dropdown-toggle  text" href="Libros.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <a class="nav-link mx-lg-2 dropdown-toggle  " href="Libros.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Libros
             </a>
             <ul class="dropdown-menu">
@@ -116,7 +114,7 @@
 			  <li><a class="dropdown-item text-align-left" href="Romance.html">Romance</a></li>
             </ul>
           </li>
-	     
+	      
           <li class="nav-item dropdown">
             <a class="nav-link mx-lg-2 " aria-current="page" href="Eventos.html">Eventos</a>
           </li>
@@ -464,7 +462,7 @@
 		   <div class="col mb-3">
 			  <h6>Nosotros</h6>
 			  <ul class="nav flex-column">
-				<li class="nav-item mb-2"><a href="Nosotros.html">Quienes Somos</a></li>
+				<li class="nav-item mb-2"><a href="About-us.html">Quienes Somos</a></li>
 				<li class="nav-item mb-2"><a href="Eventos.html">Eventos</a></li>
 			    <li class="nav-item mb-2"><a href="Contactanos.html">Contáctanos</a></li>
 				<li class="nav-item mb-2"><a href="Q&A.html">Preguntas frecuentes</a></li>
@@ -498,9 +496,10 @@
   <!--Fin contenedor principal -->
 	
 	<!--Scripts -->
+ 
   <script src="js/jquery-3.4.1.min.js"></script> 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script src="js/popper.min.js"></script>
+	  
   <script src="js/bootstrap-4.4.1.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>

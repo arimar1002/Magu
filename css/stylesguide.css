@@ -27,6 +27,12 @@ nombre-libro-line-height: 122.00000286102295%;
 nombre-libro-font-style: normal;
 }
 
+a {
+  color: #D36954;
+  text-decoration: none;
+  background-color: transparent;
+}
+
 .form-check-input:checked{
 	background-color: #D36954!important; 
 	border-color: #D36954!important;
@@ -36,7 +42,13 @@ nombre-libro-font-style: normal;
 	margin: 0px;
 	padding: 0px;
 	margin-top: 150px;
-	min-height: 100vh; 
+	height: auto; 
+}
+
+@media(max-width: 768px){
+	#contenedorprincipal h1{
+		font-size: 1.8rem!important;
+	}
 }
 
 .btn-lg, .btn-group-lg > .btn {
@@ -469,7 +481,8 @@ nombre-libro-font-style: normal;
 
 .container-body h1{
 	text-align: center;
-	font-family: "Phudu", "Lato", sans-serif; 
+	font-family: "Lato", sans-serif; 
+	font-weight: 600;
 }
 
 .container-body p{
@@ -734,7 +747,7 @@ input[type="range"]::-moz-range-thumb{
 
 #products-body{
 	margin-top: 0px;
-	padding: 2rem; 
+	padding: 1.5rem; 
 }
 
 .product-type{
@@ -919,4 +932,43 @@ input[type="range"]::-moz-range-thumb{
 
 .form-select {
     margin-left: 0px;
+}
+
+
+/*-------------WISHLIST---------------*/
+@media (max-width: 768px){
+	#wishlist h4{
+		font-size: 1.2rem!important;
+	}
+
+}
+
+#wishlist h4{
+	font-weight: 400;
+}
+
+.btn-close{
+	font-size: 0.8rem;
+	margin-right: 0.5rem;
+}
+
+
+
+.card-registration .select-arrow {
+top: 13px;
+}
+
+/*-------------WISHLIST---------------*/
+
+#about-us h6{
+	font-size: 19px;
+	font-weight: 500;
+	color: var(--dark);
+}
+
+#about-us p{
+	font-size: 18px;
+	font-family: "Lato", sans-serif;
+	font-weight: 500;
+	color: var(--dark);
 }
