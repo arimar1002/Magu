@@ -94,11 +94,11 @@ var Price = document.getElementById('Price');
 var choice = document.getElementsByClassName('choice');
 
 choice[0].onclick = function(){
-	Price.innerHTML = "Lps. 600";
+	Price.innerHTML = "Lps. 700";
 }
 
 choice[1].onclick = function(){
-	Price.innerHTML = "Lps. 500";
+	Price.innerHTML = "Lps. 600";
 }
 
 
@@ -144,7 +144,7 @@ btnElList.forEach(btnEl => {
  
  var config = {
     cUrl: 'https://api.countrystatecity.in/v1/countries',
-    ckey: 'NHhvOEcyWk50N2Vna3VFTE00bFp3MjFKR0ZEOUhkZlg4RTk1MlJlaA=='
+    ckey: 'TldGR0ZYYXdpM2N0dFppNUV2NXpTSlRVRFZ5Y2dJTkJUaFZVNHVYbg=='
 }
 
 

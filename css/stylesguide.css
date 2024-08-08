@@ -33,6 +33,11 @@ a {
   background-color: transparent;
 }
 
+a .link-color {
+	color: #D36954!important;
+  text-decoration: none;
+}
+
 .pagination a{
 	 color: #D36954;
 }
